@@ -9,7 +9,7 @@ cosmo = FlatLambdaCDM(H0=70 * un.km / un.s / un.Mpc, Tcmb0=2.725 * un.K, Om0=0.3
 
 def print_stats(data_column):
     '''
-    prints out the minimum, maximum, and median 
+    prints out the minimum, maximum, mean, and median 
     values of a pandas data frame column.
     
     Parameters:
@@ -25,6 +25,7 @@ def print_stats(data_column):
     print(f"The minimum is {data_column.min()}")
     print(f"The maximum is {data_column.max()}")
     print(f"The median is {data_column.median()}")
+    print(f"The mean is {data_column.mean()}")
     
 def plot_histogram(data_column, plot_title, x_label):
     '''
